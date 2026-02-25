@@ -1,0 +1,137 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<uzeletek>
+
+    <!-- Kereskedések -->
+    <kereskedes k_id="k1">
+        <cim>
+            <iranyitoszam>1234</iranyitoszam>
+            <varos>Budapest</varos>
+            <utca-hazszam>Váci utca 10.</utca-hazszam>
+        </cim>
+        <dolgozo a_fid="a1"/>
+        <dolgozo a_fid="a2"/>
+    </kereskedes>
+
+    <kereskedes k_id="k2">
+        <cim>
+            <iranyitoszam>5678</iranyitoszam>
+            <varos>Debrecen</varos>
+            <utca-hazszam>Kossuth utca 5.</utca-hazszam>
+        </cim>
+        <dolgozo a_fid="a3"/>
+        <dolgozo a_fid="a4"/>
+    </kereskedes>
+
+    <!-- Raktárok -->
+    <raktar r_id="r1">
+        <cim>
+            <iranyitoszam>4321</iranyitoszam>
+            <varos>Szeged</varos>
+            <utca-hazszam>Raktár utca 3.</utca-hazszam>
+        </cim>
+    </raktar>
+
+    <raktar r_id="r2">
+        <cim>
+            <iranyitoszam>8765</iranyitoszam>
+            <varos>Pécs</varos>
+            <utca-hazszam>Raktár utca 7.</utca-hazszam>
+        </cim>
+    </raktar>
+
+    <!-- Beszállító -->
+    <beszallito r_fid="r1" k_fid="k1" />
+    <beszallito r_fid="r2" k_fid="k2" />
+
+    <!-- Áru -->
+    <aru a_id="a1">
+        <nev>Tej</nev>
+        <netto-ar>200</netto-ar>
+        <afa>27</afa>
+    </aru>
+
+    <aru a_id="a2">
+        <nev>Kenyer</nev>
+        <netto-ar>150</netto-ar>
+        <afa>27</afa>
+    </aru>
+
+    <!-- Leltár -->
+    <leltar a_fid="a1" r_fid="r1">
+        <darabszam>10</darabszam>
+    </leltar>
+
+    <leltar a_fid="a2" r_fid="r2">
+        <darabszam>20</darabszam>
+    </leltar>
+
+    <!-- Rendelés -->
+    <rendeles re_id="re1" f_fid="f1" v_fid="v1" k_fid="k1">
+        <teljesült>igen</teljesült>
+        <datum-ido>2026-02-25 14:30:00</datum-ido>
+        <teljes-ar>4500</teljes-ar>
+    </rendeles>
+
+    <rendeles re_id="re2" f_fid="f2" v_fid="v2" k_fid="k2">
+        <teljesült>nem</teljesült>
+        <datum-ido>2026-02-23 12:00:00</datum-ido>
+        <teljes-ar>3000</teljes-ar>
+    </rendeles>
+
+    <!-- Áru-Rendelés -->
+    <a-r a_fid="a1" re_fid="re1">
+        <darabszam>5</darabszam>
+    </a-r>
+
+    <a-r a_fid="a2" re_fid="re2">
+        <darabszam>10</darabszam>
+    </a-r>
+
+    <!-- Vásárló -->
+    <vasarlo v_id="v1">
+        <nev>Kovács János</nev>
+        <cim>
+            <iranyitoszam>1234</iranyitoszam>
+            <varos>Budapest</varos>
+            <utca-hazszam>Fő utca 1.</utca-hazszam>
+        </cim>
+    </vasarlo>
+
+    <vasarlo v_id="v2">
+        <nev>Szabó Péter</nev>
+        <cim>
+            <iranyitoszam>5678</iranyitoszam>
+            <varos>Debrecen</varos>
+            <utca-hazszam>Kossuth utca 2.</utca-hazszam>
+        </cim>
+    </vasarlo>
+
+    <!-- Fuvarozó -->
+    <fuvarozó f_id="f1">
+        <nev>GLS</nev>
+        <dij>1500</dij>
+    </fuvarozó>
+
+    <fuvarozó f_id="f2">
+        <nev>DHL</nev>
+        <dij>2000</dij>
+    </fuvarozó>
+
+    <!-- Alkalmazott -->
+    <alkalmazott a_id="a1">
+        <nev>Juhász Péter</nev>
+        <lakcim>1234, Budapest, Fő utca 15.</lakcim>
+        <telefonszam>+36 1 123 4567</telefonszam>
+        <telefonszam>+36 30 987 6543</telefonszam>
+        <fizetes>350000</fizetes>
+    </alkalmazott>
+    
+    <alkalmazott a_id="a2">
+        <nev>Kiss Anna</nev>
+        <lakcim>5678, Debrecen, Kossuth utca 10.</lakcim>
+        <telefonszam>+36 52 123 456</telefonszam>
+        <telefonszam>+36 30 987 654</telefonszam>
+        <fizetes>400000</fizetes>
+    </alkalmazott>
+
+</uzeletek>
