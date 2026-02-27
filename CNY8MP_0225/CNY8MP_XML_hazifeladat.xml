@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<uzeletek>
+<uzeletek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CNY8MP_XML_hazifeladat.xsd">
 
     <!-- Kereskedések -->
     <kereskedes k_id="k1">
@@ -8,8 +8,8 @@
             <varos>Budapest</varos>
             <utca-hazszam>Váci utca 10.</utca-hazszam>
         </cim>
-        <dolgozo a_fid="a1"/>
-        <dolgozo a_fid="a2"/>
+        <dolgozo a_fid="al1"/>
+        <dolgozo a_fid="al2"/>
     </kereskedes>
 
     <kereskedes k_id="k2">
@@ -18,8 +18,8 @@
             <varos>Debrecen</varos>
             <utca-hazszam>Kossuth utca 5.</utca-hazszam>
         </cim>
-        <dolgozo a_fid="a3"/>
-        <dolgozo a_fid="a4"/>
+        <dolgozo a_fid="al3"/>
+        <dolgozo a_fid="al4"/>
     </kereskedes>
 
     <!-- Raktárok -->
@@ -118,7 +118,7 @@
     </fuvarozó>
 
     <!-- Alkalmazott -->
-    <alkalmazott a_id="a1">
+    <alkalmazott a_id="al1">
         <nev>Juhász Péter</nev>
         <lakcim>1234, Budapest, Fő utca 15.</lakcim>
         <telefonszam>+36 1 123 4567</telefonszam>
@@ -126,12 +126,28 @@
         <fizetes>350000</fizetes>
     </alkalmazott>
     
-    <alkalmazott a_id="a2">
+    <alkalmazott a_id="al2">
         <nev>Kiss Anna</nev>
         <lakcim>5678, Debrecen, Kossuth utca 10.</lakcim>
         <telefonszam>+36 52 123 456</telefonszam>
         <telefonszam>+36 30 987 654</telefonszam>
         <fizetes>400000</fizetes>
+    </alkalmazott>
+
+    <alkalmazott a_id="al3">
+        <nev>Nagy László</nev>
+        <lakcim>4321, Szeged, Raktár utca 5.</lakcim>
+        <telefonszam>+36 62 123 456</telefonszam>
+        <telefonszam>+36 30 987 654</telefonszam>
+        <fizetes>300000</fizetes>
+    </alkalmazott>
+
+    <alkalmazott a_id="al4">
+        <nev>Horváth Éva</nev>
+        <lakcim>8765, Pécs, Raktár utca 8.</lakcim>
+        <telefonszam>+36 72 123 456</telefonszam>
+        <telefonszam>+36 30 987 654</telefonszam>
+        <fizetes>320000</fizetes>
     </alkalmazott>
 
 </uzeletek>
