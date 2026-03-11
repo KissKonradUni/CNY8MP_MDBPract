@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CNY8MP_XML.xsd">
+  <etterem ekod="e1">
+    <nev>Étterem 01</nev>
+    <cim>
+      <varos>Budapest</varos>
+      <utca>Széchenyi István tér</utca>
+      <hazszam>7</hazszam>
+    </cim>
+    <csillag>5</csillag>
+  </etterem>
+  <etterem ekod="e2">
+    <nev>Étterem 02</nev>
+    <cim>
+      <varos>Debrecen</varos>
+      <utca>Kossuth Lajos utca</utca>
+      <hazszam>12</hazszam>
+    </cim>
+    <csillag>4</csillag>
+  </etterem>
+  <foszakacs e_f="e1" fkod="f1">
+    <nev>Főszakács 01</nev>
+    <eletkor>45</eletkor>
+    <vegzettseg>Szakácsiskola</vegzettseg>
+    <vegzettseg>Szakközépiskola</vegzettseg>
+  </foszakacs>
+  <foszakacs e_f="e2" fkod="f2">
+    <nev>Főszakács 02</nev>
+    <eletkor>38</eletkor>
+    <vegzettseg>Szakácsiskola</vegzettseg>
+    <vegzettseg>Főiskola</vegzettseg>
+  </foszakacs>
+  <szakacs e_sz="e1" szkod="sz1">
+    <nev>Szakács 01</nev>
+    <eletkor>30</eletkor>
+    <vegzettseg>Szakácsiskola</vegzettseg>
+  </szakacs>
+  <szakacs e_sz="e2" szkod="sz2">
+    <nev>Szakács 02</nev>
+    <eletkor>28</eletkor>
+    <vegzettseg>Szakácsiskola</vegzettseg>
+    <vegzettseg>Szakközépiskola</vegzettseg>
+  </szakacs>
+  <gyakornok e_gy="e1" gykod="gy1">
+    <nev>Gyakornok 01</nev>
+    <gyakorlat>
+      <kezdete>2026-01-01</kezdete>
+      <idotartama>6 hónap</idotartama>
+    </gyakorlat>
+    <muszak>Reggel</muszak>
+    <muszak>Délután</muszak>
+  </gyakornok>
+  <gyakornok e_gy="e2" gykod="gy2">
+    <nev>Gyakornok 02</nev>
+    <gyakorlat>
+      <kezdete>2026-02-01</kezdete>
+      <idotartama>3 hónap</idotartama>
+    </gyakorlat>
+    <muszak>Délután</muszak>
+    <muszak>Este</muszak>
+  </gyakornok>
+  <vendeg vkod="v1">
+    <nev>Vendég 01</nev>
+    <eletkor>35</eletkor>
+    <cim>
+      <varos>Budapest</varos>
+      <utca>Andrássy út</utca>
+      <hazszam>10</hazszam>
+    </cim>
+  </vendeg>
+  <vendeg vkod="v2">
+    <nev>Vendég 02</nev>
+    <eletkor>42</eletkor>
+    <cim>
+      <varos>Debrecen</varos>
+      <utca>Piac utca</utca>
+      <hazszam>5</hazszam>
+    </cim>
+  </vendeg>
+  <rendeles e_v_e="e1" e_v_v="v1">
+    <osszeg>1500</osszeg>
+    <etel>Gulyásleves</etel>
+  </rendeles>
+  <rendeles e_v_e="e2" e_v_v="v2">
+    <osszeg>1200</osszeg>
+    <etel>Lángos</etel>
+  </rendeles>
+</vendeglatas>
