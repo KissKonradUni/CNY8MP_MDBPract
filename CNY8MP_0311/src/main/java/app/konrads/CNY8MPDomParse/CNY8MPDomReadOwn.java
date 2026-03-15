@@ -41,6 +41,10 @@ public class CNY8MPDomReadOwn {
         readVasarlo(root);
         readFuvarozo(root);
         readAlkalmazott(root);
+
+        CNY8MPDomQueryOwn.queryRendelesTeljesult(root);
+        CNY8MPDomQueryOwn.queryAlkalmazottMagasFizetes(root);
+        CNY8MPDomQueryOwn.queryLeltarTizFelett(root);
     }
 
     public static void readKereskedes(Element element) {
@@ -251,7 +255,7 @@ public class CNY8MPDomReadOwn {
             var telefonszamok = alkalmazott.getElementsByTagName("telefonszam");
             System.out.print("Telefonszámok: ");
             for (int j = 0; j < telefonszamok.getLength(); j++) {
-                var telefonszam = telefonszamok.item(0).getTextContent();
+                var telefonszam = telefonszamok.item(j).getTextContent();
                 System.out.print("(" + telefonszam + ") ");
             }
             System.out.println();

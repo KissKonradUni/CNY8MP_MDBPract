@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<uzeletek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CNY8MP_XML_hazifeladat.xsd">
+  <kereskedes k_id="k1">
+    <cim>
+      <iranyitoszam>1111</iranyitoszam>
+      <varos>Budapest</varos>
+      <utca-hazszam>Alkotmány utca 11.</utca-hazszam>
+    </cim>
+    <dolgozo a_fid="al1"/>
+    <dolgozo a_fid="al2"/>
+  </kereskedes>
+  <kereskedes k_id="k2">
+    <cim>
+      <iranyitoszam>9021</iranyitoszam>
+      <varos>Győr</varos>
+      <utca-hazszam>Baross út 5.</utca-hazszam>
+    </cim>
+    <dolgozo a_fid="al3"/>
+    <dolgozo a_fid="al4"/>
+  </kereskedes>
+  <raktar r_id="r1">
+    <cim>
+      <iranyitoszam>6720</iranyitoszam>
+      <varos>Szeged</varos>
+      <utca-hazszam>Ipari park 3.</utca-hazszam>
+    </cim>
+  </raktar>
+  <raktar r_id="r2">
+    <cim>
+      <iranyitoszam>7630</iranyitoszam>
+      <varos>Pécs</varos>
+      <utca-hazszam>Logisztika utca 8.</utca-hazszam>
+    </cim>
+  </raktar>
+  <beszallito k_fid="k1" r_fid="r1"/>
+  <beszallito k_fid="k2" r_fid="r2"/>
+  <aru a_id="a1">
+    <nev>Őrölt kávé</nev>
+    <netto-ar>1200</netto-ar>
+    <afa>27</afa>
+  </aru>
+  <aru a_id="a2">
+    <nev>Száraztészta</nev>
+    <netto-ar>650</netto-ar>
+    <afa>18</afa>
+  </aru>
+  <leltar a_fid="a1" r_fid="r1">
+    <darabszam>40</darabszam>
+  </leltar>
+  <leltar a_fid="a2" r_fid="r2">
+    <darabszam>25</darabszam>
+  </leltar>
+  <rendeles f_fid="f1" k_fid="k1" re_id="re1" v_fid="v1">
+    <teljesült>igen</teljesült>
+    <datum-ido>2026-03-01 09:15:00</datum-ido>
+    <teljes-ar>4800</teljes-ar>
+  </rendeles>
+  <rendeles f_fid="f2" k_fid="k2" re_id="re2" v_fid="v2">
+    <teljesült>nem</teljesült>
+    <datum-ido>2026-03-02 16:45:00</datum-ido>
+    <teljes-ar>3250</teljes-ar>
+  </rendeles>
+  <a-r a_fid="a1" re_fid="re1">
+    <darabszam>4</darabszam>
+  </a-r>
+  <a-r a_fid="a2" re_fid="re2">
+    <darabszam>5</darabszam>
+  </a-r>
+  <vasarlo v_id="v1">
+    <nev>Németh Ádám</nev>
+    <cim>
+      <iranyitoszam>1117</iranyitoszam>
+      <varos>Budapest</varos>
+      <utca-hazszam>Fehérvári út 21.</utca-hazszam>
+    </cim>
+  </vasarlo>
+  <vasarlo v_id="v2">
+    <nev>Balogh Réka</nev>
+    <cim>
+      <iranyitoszam>4024</iranyitoszam>
+      <varos>Debrecen</varos>
+      <utca-hazszam>Piac utca 9.</utca-hazszam>
+    </cim>
+  </vasarlo>
+  <fuvarozo f_id="f1">
+    <nev>MPL</nev>
+    <dij>1400</dij>
+  </fuvarozo>
+  <fuvarozo f_id="f2">
+    <nev>DHL</nev>
+    <dij>2100</dij>
+  </fuvarozo>
+  <alkalmazott a_id="al1">
+    <nev>Tóth Júlia</nev>
+    <lakcim>1111, Budapest, Alkotmány utca 4.</lakcim>
+    <telefonszam>+36 1 222 3344</telefonszam>
+    <telefonszam>+36 30 111 2233</telefonszam>
+    <fizetes>380000</fizetes>
+  </alkalmazott>
+  <alkalmazott a_id="al2">
+    <nev>Varga Bence</nev>
+    <lakcim>1117, Budapest, Karinthy út 12.</lakcim>
+    <telefonszam>+36 1 444 5566</telefonszam>
+    <telefonszam>+36 20 333 4455</telefonszam>
+    <fizetes>360000</fizetes>
+  </alkalmazott>
+  <alkalmazott a_id="al3">
+    <nev>Király Dóra</nev>
+    <lakcim>9021, Győr, Szent István út 18.</lakcim>
+    <telefonszam>+36 96 123 456</telefonszam>
+    <telefonszam>+36 30 765 4321</telefonszam>
+    <fizetes>340000</fizetes>
+  </alkalmazott>
+  <alkalmazott a_id="al4">
+    <nev>Molnár Ákos</nev>
+    <lakcim>9024, Győr, Tihanyi Árpád út 7.</lakcim>
+    <telefonszam>+36 96 654 321</telefonszam>
+    <telefonszam>+36 70 456 7890</telefonszam>
+    <fizetes>320000</fizetes>
+  </alkalmazott>
+</uzeletek>
