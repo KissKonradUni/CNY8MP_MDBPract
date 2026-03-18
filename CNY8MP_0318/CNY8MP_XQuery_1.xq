@@ -1,0 +1,1 @@
+doc("./CNY8MP_XML.xml")//vendeg

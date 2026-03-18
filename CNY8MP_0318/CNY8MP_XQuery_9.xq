@@ -1,0 +1,1 @@
+avg(doc("./CNY8MP_XML.xml")//rendeles/osszeg)

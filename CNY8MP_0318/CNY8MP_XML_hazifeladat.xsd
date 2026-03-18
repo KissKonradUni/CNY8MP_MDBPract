@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="uzeletek">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="kereskedes" type="kereskedesTipus" maxOccurs="unbounded" />
+            <xs:element name="raktar" type="raktarTipus" maxOccurs="unbounded" />
+            <xs:element name="beszallito" type="beszallitoTipus" maxOccurs="unbounded" />
+            <xs:element name="aru" type="aruTipus" maxOccurs="unbounded" />
+            <xs:element name="leltar" type="leltarTipus" maxOccurs="unbounded" />
+            <xs:element name="rendeles" type="rendelesTipus" maxOccurs="unbounded" />
+            <xs:element name="a-r" type="aRTipus" maxOccurs="unbounded" />
+            <xs:element name="vasarlo" type="vasarloTipus" maxOccurs="unbounded" />
+            <xs:element name="fuvarozó" type="fuvarozóTipus" maxOccurs="unbounded" />
+            <xs:element name="alkalmazott" type="alkalmazottTipus" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:key name="kereskedes_kulcs">
+        <xs:selector xpath="kereskedes" />
+        <xs:field xpath="@k_id" />
+    </xs:key>
+
+    <xs:key name="raktar_kulcs">
+        <xs:selector xpath="raktar" />
+        <xs:field xpath="@r_id" />
+    </xs:key>
+
+    <xs:key name="aru_kulcs">
+        <xs:selector xpath="aru" />
+        <xs:field xpath="@a_id" />
+    </xs:key>
+
+    <xs:key name="rendeles_kulcs">
+        <xs:selector xpath="rendeles" />
+        <xs:field xpath="@re_id" />
+    </xs:key>
+
+    <xs:key name="vasarlo_kulcs">
+        <xs:selector xpath="vasarlo" />
+        <xs:field xpath="@v_id" />
+    </xs:key>
+
+    <xs:key name="fuvarozo_kulcs">
+        <xs:selector xpath="fuvarozó" />
+        <xs:field xpath="@f_id" />
+    </xs:key>
+
+    <xs:key name="alkalmazott_kulcs">
+        <xs:selector xpath="alkalmazott" />
+        <xs:field xpath="@a_id" />
+    </xs:key>
+
+    <xs:keyref refer="raktar_kulcs" name="beszallito_raktar_idegen_kulcs">
+        <xs:selector xpath="beszallito" />
+        <xs:field xpath="@r_fid" />
+    </xs:keyref>
+
+    <xs:keyref refer="kereskedes_kulcs" name="beszallito_kereskedes_idegen_kulcs">
+        <xs:selector xpath="beszallito" />
+        <xs:field xpath="@k_fid" />
+    </xs:keyref>
+
+    <xs:keyref refer="aru_kulcs" name="leltar_aru_idegen_kulcs">
+        <xs:selector xpath="leltar" />
+        <xs:field xpath="@a_fid" />
+    </xs:keyref>
+
+    <xs:keyref refer="raktar_kulcs" name="leltar_raktar_idegen_kulcs">
+        <xs:selector xpath="leltar" />
+        <xs:field xpath="@r_fid" />
+    </xs:keyref>
+
+    <xs:keyref refer="fuvarozo_kulcs" name="rendeles_fuvarozo_idegen_kulcs">
+        <xs:selector xpath="rendeles" />
+        <xs:field xpath="@f_fid" />
+    </xs:keyref>
+
+    <xs:keyref refer="vasarlo_kulcs" name="rendeles_vasarlo_idegen_kulcs">
+        <xs:selector xpath="rendeles" />
+        <xs:field xpath="@v_fid" />
+    </xs:keyref>
+
+    <xs:keyref refer="kereskedes_kulcs" name="rendeles_kereskedes_idegen_kulcs">
+        <xs:selector xpath="rendeles" />
+        <xs:field xpath="@k_fid" />
+    </xs:keyref>
+
+    <xs:keyref refer="aru_kulcs" name="ar_aru_idegen_kulcs">
+        <xs:selector xpath="a-r" />
+        <xs:field xpath="@a_fid" />
+    </xs:keyref>
+
+    <xs:keyref refer="rendeles_kulcs" name="ar_rendeles_idegen_kulcs">
+        <xs:selector xpath="a-r" />
+        <xs:field xpath="@re_fid" />
+    </xs:keyref>
+
+    <xs:keyref refer="alkalmazott_kulcs" name="kereskedes_alkalmazott_idegen_kulcs">
+        <xs:selector xpath="kereskedes/dolgozo" />
+        <xs:field xpath="@a_fid" />
+    </xs:keyref>
+</xs:element>
+
+<xs:complexType name="kereskedesTipus">
+    <xs:sequence>
+        <xs:element name="cim" type="uzletiCimTipus" />
+        <xs:element name="dolgozo" maxOccurs="unbounded">
+            <xs:complexType>
+                <xs:attribute name="a_fid" type="xs:string" use="required" />
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+    <xs:attribute name="k_id" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="raktarTipus">
+    <xs:sequence>
+        <xs:element name="cim" type="uzletiCimTipus" />
+    </xs:sequence>
+    <xs:attribute name="r_id" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="beszallitoTipus">
+    <xs:attribute name="r_fid" type="xs:string" use="required" />
+    <xs:attribute name="k_fid" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="aruTipus">
+    <xs:sequence>
+        <xs:element name="nev" type="xs:string" />
+        <xs:element name="netto-ar" type="xs:decimal" />
+        <xs:element name="afa" type="xs:integer" />
+    </xs:sequence>
+    <xs:attribute name="a_id" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="leltarTipus">
+    <xs:sequence>
+        <xs:element name="darabszam" type="xs:integer" />
+    </xs:sequence>
+    <xs:attribute name="a_fid" type="xs:string" use="required" />
+    <xs:attribute name="r_fid" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="rendelesTipus">
+    <xs:sequence>
+        <xs:element name="teljesült" type="teljesultTipus" />
+        <xs:element name="datum-ido" type="datumIdoTipus" />
+        <xs:element name="teljes-ar" type="xs:decimal" />
+    </xs:sequence>
+    <xs:attribute name="re_id" type="xs:string" use="required" />
+    <xs:attribute name="f_fid" type="xs:string" use="required" />
+    <xs:attribute name="v_fid" type="xs:string" use="required" />
+    <xs:attribute name="k_fid" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="aRTipus">
+    <xs:sequence>
+        <xs:element name="darabszam" type="xs:integer" />
+    </xs:sequence>
+    <xs:attribute name="a_fid" type="xs:string" use="required" />
+    <xs:attribute name="re_fid" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="vasarloTipus">
+    <xs:sequence>
+        <xs:element name="nev" type="xs:string" />
+        <xs:element name="cim" type="uzletiCimTipus" />
+    </xs:sequence>
+    <xs:attribute name="v_id" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="fuvarozóTipus">
+    <xs:sequence>
+        <xs:element name="nev" type="xs:string" />
+        <xs:element name="dij" type="xs:decimal" />
+    </xs:sequence>
+    <xs:attribute name="f_id" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="alkalmazottTipus">
+    <xs:sequence>
+        <xs:element name="nev" type="xs:string" />
+        <xs:element name="lakcim" type="xs:string" />
+        <xs:element name="telefonszam" type="xs:string" maxOccurs="unbounded" />
+        <xs:element name="fizetes" type="xs:decimal" />
+    </xs:sequence>
+    <xs:attribute name="a_id" type="xs:string" use="required" />
+</xs:complexType>
+
+<xs:complexType name="uzletiCimTipus">
+    <xs:sequence>
+        <xs:element name="iranyitoszam" type="xs:integer" />
+        <xs:element name="varos" type="xs:string" />
+        <xs:element name="utca-hazszam" type="xs:string" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="teljesultTipus">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="igen" />
+        <xs:enumeration value="nem" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="datumIdoTipus">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}" />
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
