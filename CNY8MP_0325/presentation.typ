@@ -36,7 +36,7 @@
   #v(1em)
   #text(size: 28pt, fill: rgb("#444444"))[7. Gyakorlat: LINQ programozás]
   #v(3em)
-  #text(size: 18pt, fill: rgb("#666666"))[GitHub: https://github.com/KissKonradUni/CNY8MP_MDBPract]
+  #text(size: 18pt, fill: rgb("#666666"))[GitHub: https://konrads.hu/short/mdb]
 ]
 
 #pagebreak()
