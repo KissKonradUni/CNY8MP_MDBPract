@@ -1,0 +1,44 @@
+[
+  {
+    "nev": "Trofea",
+    "varos": "Budapest",
+    "cim": { "utca": "Visegradq", "hazszam": "13" },
+    "csillag": 4,
+    "specialitasok": ["magyar", "nemzetkozi"]
+  },
+  {
+    "nev": "Gundel",
+    "varos": "Budapest",
+    "cim": { "utca": "Gundel Karoly", "hazszam": "4" },
+    "csillag": 5,
+    "specialitasok": ["fine dining", "magyar"]
+  },
+  {
+    "nev": "Kistucsok",
+    "varos": "Balatonszemes",
+    "cim": { "utca": "Fo", "hazszam": "1" },
+    "csillag": 5,
+    "specialitasok": ["hal", "modern magyar"]
+  },
+  {
+    "nev": "Rosenstein",
+    "varos": "Budapest",
+    "cim": { "utca": "Mosonyi", "hazszam": "3" },
+    "csillag": 4,
+    "specialitasok": ["zsido", "magyar"]
+  },
+  {
+    "nev": "Anyukam Mondta",
+    "varos": "Miskolc",
+    "cim": { "utca": "Szechenyi", "hazszam": "19" },
+    "csillag": 3,
+    "specialitasok": ["hazias", "levesek"]
+  },
+  {
+    "nev": "Paletta",
+    "varos": "Eger",
+    "cim": { "utca": "Dobo ter", "hazszam": "8" },
+    "csillag": 2,
+    "specialitasok": ["olasz", "pizza"]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "nev": "Otlet Elek",
+    "reszleg": "Saucier",
+    "eletkor": 30,
+    "fizetes": 450000,
+    "etterem_nev": "Trofea",
+    "vegzettsegek": ["Szakkozepiskola", "Le Cordon Bleu"]
+  },
+  {
+    "nev": "Kocsis Tibor",
+    "reszleg": "Entremetier",
+    "eletkor": 28,
+    "fizetes": 380000,
+    "etterem_nev": "Gundel",
+    "vegzettsegek": ["Szakkozepiskola", "Paul Bocuse Institute"]
+  },
+  {
+    "nev": "Nagy Eva",
+    "reszleg": "Patissier",
+    "eletkor": 35,
+    "fizetes": 420000,
+    "etterem_nev": "Kistucsok",
+    "vegzettsegek": ["Egyetem", "Le Cordon Bleu", "Ferrandi Paris"]
+  },
+  {
+    "nev": "Kiss Peter",
+    "reszleg": "Saucier",
+    "eletkor": 45,
+    "fizetes": 520000,
+    "etterem_nev": "Rosenstein",
+    "vegzettsegek": ["Szakkozepiskola"]
+  }
+]

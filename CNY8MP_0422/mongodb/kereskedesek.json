@@ -1,0 +1,20 @@
+[
+  {
+    "k_id": "k1",
+    "cim": {
+      "iranyitoszam": "1234",
+      "varos": "Budapest",
+      "utca_hazszam": "Vaci utca 10."
+    },
+    "dolgozo_azonositok": ["al1", "al2"]
+  },
+  {
+    "k_id": "k2",
+    "cim": {
+      "iranyitoszam": "5678",
+      "varos": "Debrecen",
+      "utca_hazszam": "Kossuth utca 5."
+    },
+    "dolgozo_azonositok": ["al3", "al4"]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "a_id": "al1",
+    "nev": "Juhasz Peter",
+    "lakcim": "1234, Budapest, Fo utca 15.",
+    "telefonszam": ["+36 1 123 4567", "+36 30 987 6543"],
+    "fizetes": 350000,
+    "kereskedes_id": "k1"
+  },
+  {
+    "a_id": "al2",
+    "nev": "Kiss Anna",
+    "lakcim": "5678, Debrecen, Kossuth utca 10.",
+    "telefonszam": ["+36 52 123 456", "+36 30 987 654"],
+    "fizetes": 400000,
+    "kereskedes_id": "k1"
+  },
+  {
+    "a_id": "al3",
+    "nev": "Nagy Laszlo",
+    "lakcim": "4321, Szeged, Raktar utca 5.",
+    "telefonszam": ["+36 62 123 456", "+36 30 987 654"],
+    "fizetes": 300000,
+    "kereskedes_id": "k2"
+  },
+  {
+    "a_id": "al4",
+    "nev": "Horvath Eva",
+    "lakcim": "8765, Pecs, Raktar utca 8.",
+    "telefonszam": ["+36 72 123 456", "+36 30 987 654"],
+    "fizetes": 320000,
+    "kereskedes_id": "k2"
+  }
+]

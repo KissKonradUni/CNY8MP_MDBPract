@@ -1,0 +1,198 @@
+{
+  "uzeletek": {
+    "kereskedes": [
+      {
+        "k_id": "k1",
+        "cim": {
+          "iranyitoszam": "1234",
+          "varos": "Budapest",
+          "utca_hazszam": "Vaci utca 10."
+        },
+        "dolgozo": [
+          {
+            "a_fid": "al1"
+          },
+          {
+            "a_fid": "al2"
+          }
+        ]
+      },
+      {
+        "k_id": "k2",
+        "cim": {
+          "iranyitoszam": "5678",
+          "varos": "Debrecen",
+          "utca_hazszam": "Kossuth utca 5."
+        },
+        "dolgozo": [
+          {
+            "a_fid": "al3"
+          },
+          {
+            "a_fid": "al4"
+          }
+        ]
+      }
+    ],
+    "raktar": [
+      {
+        "r_id": "r1",
+        "cim": {
+          "iranyitoszam": "4321",
+          "varos": "Szeged",
+          "utca_hazszam": "Raktar utca 3."
+        }
+      },
+      {
+        "r_id": "r2",
+        "cim": {
+          "iranyitoszam": "8765",
+          "varos": "Pecs",
+          "utca_hazszam": "Raktar utca 7."
+        }
+      }
+    ],
+    "beszallito": [
+      {
+        "r_fid": "r1",
+        "k_fid": "k1"
+      },
+      {
+        "r_fid": "r2",
+        "k_fid": "k2"
+      }
+    ],
+    "aru": [
+      {
+        "a_id": "a1",
+        "nev": "Tej",
+        "netto_ar": 200,
+        "afa": 27
+      },
+      {
+        "a_id": "a2",
+        "nev": "Kenyer",
+        "netto_ar": 150,
+        "afa": 27
+      }
+    ],
+    "leltar": [
+      {
+        "a_fid": "a1",
+        "r_fid": "r1",
+        "darabszam": 10
+      },
+      {
+        "a_fid": "a2",
+        "r_fid": "r2",
+        "darabszam": 20
+      }
+    ],
+    "rendeles": [
+      {
+        "re_id": "re1",
+        "f_fid": "f1",
+        "v_fid": "v1",
+        "k_fid": "k1",
+        "teljesult": "igen",
+        "datum_ido": "2026-02-25 14:30:00",
+        "teljes_ar": 4500
+      },
+      {
+        "re_id": "re2",
+        "f_fid": "f2",
+        "v_fid": "v2",
+        "k_fid": "k2",
+        "teljesult": "nem",
+        "datum_ido": "2026-02-23 12:00:00",
+        "teljes_ar": 3000
+      }
+    ],
+    "a_r": [
+      {
+        "a_fid": "a1",
+        "re_fid": "re1",
+        "darabszam": 5
+      },
+      {
+        "a_fid": "a2",
+        "re_fid": "re2",
+        "darabszam": 10
+      }
+    ],
+    "vasarlo": [
+      {
+        "v_id": "v1",
+        "nev": "Kovacs Janos",
+        "cim": {
+          "iranyitoszam": "1234",
+          "varos": "Budapest",
+          "utca_hazszam": "Fo utca 1."
+        }
+      },
+      {
+        "v_id": "v2",
+        "nev": "Szabo Peter",
+        "cim": {
+          "iranyitoszam": "5678",
+          "varos": "Debrecen",
+          "utca_hazszam": "Kossuth utca 2."
+        }
+      }
+    ],
+    "fuvarozo": [
+      {
+        "f_id": "f1",
+        "nev": "GLS",
+        "dij": 1500
+      },
+      {
+        "f_id": "f2",
+        "nev": "DHL",
+        "dij": 2000
+      }
+    ],
+    "alkalmazott": [
+      {
+        "a_id": "al1",
+        "nev": "Juhasz Peter",
+        "lakcim": "1234, Budapest, Fo utca 15.",
+        "telefonszam": [
+          "+36 1 123 4567",
+          "+36 30 987 6543"
+        ],
+        "fizetes": 350000
+      },
+      {
+        "a_id": "al2",
+        "nev": "Kiss Anna",
+        "lakcim": "5678, Debrecen, Kossuth utca 10.",
+        "telefonszam": [
+          "+36 52 123 456",
+          "+36 30 987 654"
+        ],
+        "fizetes": 400000
+      },
+      {
+        "a_id": "al3",
+        "nev": "Nagy Laszlo",
+        "lakcim": "4321, Szeged, Raktar utca 5.",
+        "telefonszam": [
+          "+36 62 123 456",
+          "+36 30 987 654"
+        ],
+        "fizetes": 300000
+      },
+      {
+        "a_id": "al4",
+        "nev": "Horvath Eva",
+        "lakcim": "8765, Pecs, Raktar utca 8.",
+        "telefonszam": [
+          "+36 72 123 456",
+          "+36 30 987 654"
+        ],
+        "fizetes": 320000
+      }
+    ]
+  }
+}
