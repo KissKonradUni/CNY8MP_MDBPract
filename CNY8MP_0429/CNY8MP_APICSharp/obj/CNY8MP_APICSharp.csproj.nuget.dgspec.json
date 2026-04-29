@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "/mnt/data/programming/database/CNY8MP_MDBPract/CNY8MP_0429/CNY8MP_APICSharp/CNY8MP_APICSharp.csproj": {}
+  },
+  "projects": {
+    "/mnt/data/programming/database/CNY8MP_MDBPract/CNY8MP_0429/CNY8MP_APICSharp/CNY8MP_APICSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/mnt/data/programming/database/CNY8MP_MDBPract/CNY8MP_0429/CNY8MP_APICSharp/CNY8MP_APICSharp.csproj",
+        "projectName": "CNY8MP_APICSharp",
+        "projectPath": "/mnt/data/programming/database/CNY8MP_MDBPract/CNY8MP_0429/CNY8MP_APICSharp/CNY8MP_APICSharp.csproj",
+        "packagesPath": "/home/konrad/.nuget/packages/",
+        "outputPath": "/mnt/data/programming/database/CNY8MP_MDBPract/CNY8MP_0429/CNY8MP_APICSharp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/konrad/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.25, 8.0.25]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.125/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
