@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<konyvtar>
+  <konyv isbn="1234567890">
+    <cim>LINQ to XML példa</cim>
+    <szerzo>Nagyszerű Konrád (best seller)</szerzo>
+    <ar>5980</ar>
+  </konyv>
+  <konyv isbn="0987654321">
+    <cim>C# programozás</cim>
+    <szerzo>Szerény Konrád (best seller)</szerzo>
+    <ar>7980</ar>
+  </konyv>
+</konyvtar>
