@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CNY8MP_APICSharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00a27cbd7b2bb73c4ab4f0fde27a0429fa9a093b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b2b1dcb0afed5ccfc3d596683d9509bdbba2702")]
 [assembly: System.Reflection.AssemblyProductAttribute("CNY8MP_APICSharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CNY8MP_APICSharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
