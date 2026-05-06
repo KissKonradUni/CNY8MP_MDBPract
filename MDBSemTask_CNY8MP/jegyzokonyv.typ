@@ -180,47 +180,43 @@ Az előadás felépítését az alábbi lépések szerint terveztem meg:
 
 *1. Fejlesztési környezet:* A hallgatók Visual Studio Code és .NET SDK 8.0-t használnak.
 
-*2. Alapvető feladatok (az én mintám szerint):*
+*2. Alapvető feladatok:*
 
-+ Az XML dokumentum betöltése XDocument.Load() segítségével
-+ Az összes kereskedés nevének és városának listázása
-+ Kereskedések szűrése város alapján
-+ Kereskedések csoportosítása város szerint
-+ Raktárak számának meghatározása
++ Az XML dokumentum betöltése `XDocument.Load()` segítségével (pl. `etterem.xml`)
++ A gyökérelem (`vendeglatas`) kiválasztása és a teljes dokumentum kiíratása
++ Egyszerű szűrés LINQ segítségével: az ötcsillagos éttermek listázása
 
 *3. Haladó feladatok:*
 
-+ Kereskedés-raktár kapcsolatok megjelenítése
-+ Az egyes kereskedésekhez tartozó áru listázása
-+ Termékek ára szerinti szűrés
-+ Adatok csoportosítása és aggregálása
++ Komplex lekérdezés több "JOIN" jellegű összekapcsolással (vendég ↔ rendelés ↔ étterem)
++ Aggregáció: az átlagos költés meghatározása a rendelések összegeiből
++ Módosítás: minden rendelés összegének megduplázása és mentése új XML fájlba (`etterem_modositott.xml`)
++ Törlés: a 3 csillagos éttermek eltávolítása és mentése új XML fájlba (`etterem_torolt.xml`)
 
 == A futtatás eredménye
 
 Az alkalmazás futtatásakor (a mintaadatok alapján) az alábbi jellegű kimenet jelenik meg:
 
 ```
-=== 1) Kereskedések és címük ===
-- k1: 1234, Budapest, Váci utca 10.
-- k2: 5678, Debrecen, Kossuth utca 5.
+=== 0) A teljes dokumentum ===
+<vendeglatas>...
 
-=== 2) Dolgozók kereskedésenként ===
-- k1: Juhász Péter, Kiss Anna
-- k2: Nagy László, Horváth Éva
+=== 1) Az ötcsillagos éttermek ===
+- Arany Kanál Étterem
+- Panoráma Bistro
 
-=== 3) Leltár (raktár -> áru, darab) ===
-- r1 (4321, Szeged, Raktár utca 3.): Tej = 10 db
-- r2 (8765, Pécs, Raktár utca 7.): Kenyer = 20 db
+=== 2) Ki-mit rendelt, hol, mennyiért ===
+- Vendég: Kovács János | Étterem: Arany Kanál Étterem | Étel: Gulyásleves | Összeg: 2490
+- Vendég: Szabó Péter | Étterem: Panoráma Bistro | Étel: Rántott sajt | Összeg: 2790
 
-=== 4) Rendelések összefoglalása ===
-- re1: teljesült, 2026-02-25 14:30:00
-  Kereskedés: k1 (1234, Budapest, Váci utca 10.)
-  Vásárló: Kovács János | Fuvarozó: GLS | Teljes ár: 4500 Ft
-  Tételek: Tej (5 db)
-- re2: nem teljesült, 2026-02-23 12:00:00
-  Kereskedés: k2 (5678, Debrecen, Kossuth utca 5.)
-  Vásárló: Szabó Péter | Fuvarozó: DHL | Teljes ár: 3000 Ft
-  Tételek: Kenyer (10 db)
+=== 3) Az átlagos költés ===
+- Átlag: 3125,50
+
+=== 4) Mentés (módosított) ===
+- Az új fájl neve: "etterem_modositott.xml"
+
+=== 5) Mentés (törölt 3 csillagos éttermek nélkül) ===
+- Az új fájl neve: "etterem_torolt.xml"
 ```
 
 #pagebreak()
